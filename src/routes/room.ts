@@ -61,6 +61,7 @@ roomsRouter.post('/create', async (request, response, next) => {
         let room = await twilioClient.video.rooms.create({
             uniqueName: roomName,
             type: 'group'
+            // type: 'peer-to-peer'
         });
 
 
